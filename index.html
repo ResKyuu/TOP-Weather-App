@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="weather-scripts.js" defer></script>
+    <title>TOP | Weather app</title>
+  </head>
+  <body>
+    <div class="mainContent">
+      <div class="content">
+        <div class="searchContainer">
+          <div class="search">
+            <label for="input">Search</label>
+            <input
+              class="citySearchInput"
+              type="text"
+              placeholder="Enter City Name..."
+            />
+            <button class="confirmCitySeach">Confirm</button>
+          </div>
+          <div class="errorTextContainer hidden">
+            <p class="errorText"></p>
+          </div>
+        </div>
+        <div class="weatherContents hidden">
+          <!-- Temperature Unit Toggle Button -->
+          <div class="tempUnitToggleContainer">
+            <button class="tempUnitToggle">
+              <span class="unit-option active">°F</span>
+              <span class="unit-divider">|</span>
+              <span class="unit-option">°C</span>
+            </button>
+          </div>
+          
+          <div class="weatherButtons">
+            <div class="weatherPrevious">
+              <button class="weatherPreviousButton"></button>
+            </div>
+            <div class="weatherNext">
+              <button class="weatherNextButton"></button>
+            </div>
+          </div>
+          <div class="weatherItem show">
+            <div class="weatherIconContainer">
+              <img class="weatherIcon" src="#" alt="weatherIcon" />
+            </div>
+            <div class="weatherContentsInformation">
+              <h3 class="weatherCurrentTemp"></h3>
+              <h3 class="weatherCurrentHumidity"></h3>
+              <h3 class="weatherCurrentLowestTemp"></h3>
+              <h3 class="weatherCurrentHighestTemp"></h3>
+              <h3 class="weatherDayDate"></h3>
+            </div>
+          </div>
+        <div class="locationContainer">
+          <img class="locationIcon" src="svgs/location.svg" alt="" />
+          <h3 class="locationText"></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
