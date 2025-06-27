@@ -381,6 +381,11 @@ p {
   transform: translateY(-5px);
 }
 
+.weatherItem:hover ~ .tempUnitToggleContainer,
+.weatherContents:hover .tempUnitToggleContainer {
+  transform: translateY(-5px);
+}
+
 .weatherItem:hover {
   transform: translateY(-5px);
 }
@@ -743,6 +748,7 @@ p {
   right: 75px;
   z-index: 15;
   pointer-events: none; /* Prevent triggering parent hover effects */
+  transition: transform 0.3s ease; /* Add smooth transition */
 }
 
 .tempUnitToggle {
